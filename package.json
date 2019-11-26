@@ -4,8 +4,23 @@
   "description": "Assistant",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Anton Tymczenko",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/register": "^7.7.0",
+    "@babel/runtime": "^7.7.2",
+    "dotenv": "^8.2.0",
+    "moment": "^2.24.0",
+    "puppeteer": "^2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
 }
